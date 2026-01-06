@@ -1,0 +1,17 @@
+# Discord Stream Monitor - Python Dependencies
+
+# Core: Discord user account library (NOT discord.py, which is for bots)
+# Using latest available version
+discord.py-self
+
+# Environment variable management
+python-dotenv==1.0.0
+
+# Async HTTP client for downloading images
+aiohttp==3.9.1
+
+# Colored console output for better readability
+colorama==0.4.6
+
+# Timezone support for daily log rotation
+pytz==2024.1
