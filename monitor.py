@@ -17,12 +17,8 @@ class DiscordMonitor(discord.Client):
     """Discord client for monitoring channels"""
     
     def __init__(self):
-        # Initialize Discord client with minimal intents
-        intents = discord.Intents.default()
-        intents.messages = True
-        intents.message_content = True
-        
-        super().__init__(intents=intents)
+        # Initialize Discord client (discord.py-self doesn't use intents)
+        super().__init__()
         
         # Initialize utilities
         self.logger = get_logger(config.logs_dir, config.timezone_offset)
